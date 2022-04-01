@@ -1,0 +1,35 @@
+@import "../../CSS/index.sass"
+
+.navbar-container
+    width: 100%
+    height: 4.5rem
+    background: $color-background
+    .nav-center
+        width: 87%
+        height: 100%
+        margin: 0 auto
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
+        color: $color-neutral-white
+
+.nav-left
+    font-family: $font-main
+    font-weight: 600
+    font-size: 1.3rem
+    letter-spacing: 1.7px
+
+.nav-right
+    display: flex
+    align-items: center
+    justify-content: space-around
+    .nav-link
+        margin: 0rem 0.5rem !important
+        font-weight: 300
+        font-size: 0.9rem
+        letter-spacing: 0.5px
+        cursor: pointer
+        transition: $transition-02
+        &:hover
+            color: $color-main-light !important

@@ -1,0 +1,76 @@
+@import "../../CSS/index.sass"
+
+footer
+    background: $color-background  
+    width: 100%
+    .footer-center
+        width: 80%
+        margin: 0 auto
+        padding-top: 3rem
+        color: $color-neutral-white
+        .footer-top
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            font-family: $font-main
+            .copy
+                font-size: 0.95rem
+                font-weight: 400
+                align-self: center
+            .map-list
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                .list-title
+                    font-size: 1.02rem
+                    font-weight: 300
+                    color: $color-main-normal
+                    margin-bottom: 0.7rem !important
+                .list-item
+                    font-size: 1.02rem
+                    font-weight: 300
+                    margin: 0.3rem 0rem !important
+                    cursor: pointer
+            #arrowUp
+                font-size: 2.25rem
+                color: $color-main-light
+                cursor: pointer
+        .footer-bot
+            padding-top: 2rem
+            padding-bottom: 6rem
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            font-family: $font-main
+            .newsletter
+                width: 16rem
+                h2
+                    font-size: 1.3rem
+                    font-weight: 300
+                    line-height: 1.8rem
+                input
+                    width: 80%
+                    margin-top: 0.7rem
+                    background: transparent
+                    height: 2.3rem
+                    border: none
+                    border-bottom: 0.2px solid #e6e7e8
+                input::placeholder
+                    font-size: 0.9rem
+                    position: absolute
+                    top: 0%
+                    left: 0%
+                button
+                    border: none
+                    outline: none
+                    background: none
+                button > *
+                    font-size: 2rem
+                    color: $color-main-light
+            .social-icons
+                width: 8rem
+                display: flex
+                flex-direction: row
+                align-items: center
+                justify-content: space-between

@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap')
+
+// Font:
+$font-main: 'Open Sans', sans-serif
+// Colors:
+$color-main-dark: #1D1A5F
+$color-main-normal: #6872B7
+$color-main-light: #96A5F5
+$color-neutral-black: #212529
+$color-neutral-white: #fff
+$color-neutral-700: #495057
+$color-neutral-600: #6C757D
+$color-neutral-500: #ADB5BD
+$color-neutral-400: #CED4DA
+$color-neutral-300: #DEE2E6
+$color-neutral-200: #E9ECEF
+$color-neutral-100: #F8F9FA
+$color-background: #201F1F
+// Transition:
+$transition-03: 0.3s linear all
+$transition-02: 0.3s linear all
+
+// === Globals ===
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $font-main
+
+body
+    overflow-x: hidden
+
+h1, h2, h3, h4, h5, h6
+    margin: 0 !important
+
+a
+    text-decoration: none !important
+    color: inherit !important
+    &:visited
+        color: inherit !important
+
+ul, li
+    list-style: none !important
+    color: inherit !important
+    margin: 0 !important
+    padding: 0 !important
+
+button
+    outline: none
+    border: none
+
+// Sections
+.section
+    width: 100%
+    height: 100%
+    .section-center
+        width: 90% !important
+        height: 100% !important
+        margin: 0 auto !important
+
+// Buttons
+.btn-solid
+    font-size: 1.2rem
+    font-weight: 300
+    font-family: $font-main
+    border: 2px solid $color-main-dark
+    background: $color-main-dark
+    color: $color-neutral-white
+    padding: 0.7rem 1.3rem
+
+.btn-ghost
+    font-size: 1.2rem
+    font-weight: 400
+    font-family: $font-main
+    background: transparent
+    border: 2px solid $color-main-dark
+    color: $color-main-dark
+    padding: 0.7rem 1.3rem
+
+.btn-pastel
+    font-size: 1.2rem
+    font-weight: 400
+    letter-spacing: 1.2px
+    font-family: $font-main
+    background: #E3E9FF
+    border: 2px solid #E3E9FF
+    color: $color-main-dark
+    padding: 0.7rem 1.3rem
+    transition: $transition-02
+    #btnArrow
+        margin-left: 1.2rem
+        font-size: 1.7rem
+        color: $color-main-dark
+        transition: $transition-02
+    &:hover
+        border: 2px solid $color-main-dark
+        background: $color-main-dark
+        color: $color-neutral-white
+        #btnArrow
+            color: $color-neutral-white
