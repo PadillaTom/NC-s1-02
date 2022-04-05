@@ -1,0 +1,32 @@
+@import "../../CSS/index.sass"
+
+.home-container
+    width: 100%
+    height: 80vh
+    .home-center
+        width: 90%
+        height: 100%
+        margin: 0 auto
+        display: grid
+        place-items: center
+        .home-left
+            text-align: center
+            h2
+                font-size: 2rem
+                font-weight: 300
+                line-height: 1.3
+                span
+                    color: $color-main-normal
+                    display: block
+                    font-size: 5rem
+                    font-weight: 400
+
+.btn-pastel
+    margin-top: 3rem
+    margin-left: 0.3rem
+    align-self: center
+
+// === Queries ===
+@media (min-width: 768px)
+    .home-container
+        height: 75vh

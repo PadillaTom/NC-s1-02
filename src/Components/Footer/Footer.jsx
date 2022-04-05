@@ -12,7 +12,7 @@ const Footer = () => {
 			<div className="footer-center">
 				{/* Footer TOP */}
 				<div className="footer-top">
-					<h2 className="copy">
+					<h2 className="copy-desktop">
 						Copyright &copy; {new Date().getFullYear()}. Piscored. All rights
 						reserved.
 					</h2>
@@ -41,10 +41,12 @@ const Footer = () => {
 				<div className="footer-bot">
 					<form className="newsletter">
 						<h2>Subscribe to our newsletter</h2>
-						<input type="email" placeholder="Email Address" />
-						<button type="submit">
-							<BsArrowRightSquareFill id="submitArrow"></BsArrowRightSquareFill>
-						</button>
+						<div className="single-input">
+							<input type="email" placeholder="Email Address" />
+							<button type="submit">
+								<BsArrowRightSquareFill id="submitArrow"></BsArrowRightSquareFill>
+							</button>
+						</div>
 					</form>
 					<div className="social-icons">
 						<FaFacebookF></FaFacebookF>
@@ -52,6 +54,12 @@ const Footer = () => {
 						<FaInstagram></FaInstagram>
 					</div>
 				</div>
+			</div>
+			<div className="copy-mobile">
+				<h2>
+					Copyright &copy; {new Date().getFullYear()}. Piscored. All rights
+					reserved.
+				</h2>
 			</div>
 		</footer>
 	);

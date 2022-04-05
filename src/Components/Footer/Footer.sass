@@ -1,7 +1,7 @@
 @import "../../CSS/index.sass"
 
 footer
-    background: $color-background  
+    background: $color-background
     width: 100%
     .footer-center
         width: 80%
@@ -13,10 +13,8 @@ footer
             flex-direction: row
             justify-content: space-between
             font-family: $font-main
-            .copy
-                font-size: 0.95rem
-                font-weight: 400
-                align-self: center
+            .copy-desktop
+                display: none
             .map-list
                 display: flex
                 flex-direction: column
@@ -37,14 +35,17 @@ footer
                 cursor: pointer
         .footer-bot
             padding-top: 2rem
-            padding-bottom: 6rem
+            padding-bottom: 3rem
             display: flex
-            flex-direction: row
-            justify-content: space-between
+            flex-direction: column
             align-items: center
+            justify-content: center
             font-family: $font-main
             .newsletter
-                width: 16rem
+                display: grid
+                place-items: center
+                grid-template-rows: repeat(2,1fr)
+                margin-bottom: 2rem
                 h2
                     font-size: 1.3rem
                     font-weight: 300
@@ -74,3 +75,35 @@ footer
                 flex-direction: row
                 align-items: center
                 justify-content: space-between
+.copy-mobile
+    text-align: center
+    height: 3rem
+    background: #191919
+    display: grid
+    place-items: center
+    h2
+        font-size: 0.8rem !important
+        font-weight: 300 !important
+        letter-spacing: 1px
+        color: $color-neutral-white
+        opacity: 0.6
+
+@media (min-width: 768px)
+    .copy-mobile
+        display: none
+    .copy-desktop
+        display: grid !important
+        font-size: 0.9rem
+        font-weight: 300
+        place-items: center
+    .footer-bot
+        flex-direction: row !important
+        width: 90% !important
+        justify-content: space-between !important
+        .newsletter
+            width: 16rem !important
+            display: flex !important
+            flex-direction: column
+            align-items: center
+            .single-input
+                align-self: flex-start

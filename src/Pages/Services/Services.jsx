@@ -5,10 +5,10 @@ import { myServices } from "../../Utils/constants";
 
 const Services = () => {
 	return (
-		<section className="services-sect">
+		<section className="section">
 			<div className="section-center">
-				<div className="services-title">
-					<span>Servicios</span>
+				<div className="section-title">
+					<span>Plataforma</span>
 					<h2>Como te podemos Ayudar?</h2>
 				</div>
 				<div className="services-container">

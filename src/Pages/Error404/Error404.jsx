@@ -4,7 +4,7 @@ import "./Error404.sass";
 
 const Error404 = () => {
 	return (
-		<section className="section">
+		<section className="section-error">
 			<div className="section-center">
 				<div className="container">
 					<h1>404</h1>

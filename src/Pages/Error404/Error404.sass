@@ -1,13 +1,15 @@
 @import "../../CSS/index.sass"
 
-.section
-    height: 75vh !important
+.section-error
+    height: 70vh
     .section-center
-        display: grid !important
+        width: 90%
+        margin: 0 auto
+        display: grid
         place-items: center
-        width: 100%
         height: 100%
         .container
+            margin-top: -15%
             text-align: center
             h1
                 font-size: 10rem
@@ -21,3 +23,5 @@
                 padding-bottom: 2rem
             a
                 color: $color-neutral-white !important
+
+@media (min-width: 768px)

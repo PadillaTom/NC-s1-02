@@ -16,9 +16,15 @@ $color-neutral-300: #DEE2E6
 $color-neutral-200: #E9ECEF
 $color-neutral-100: #F8F9FA
 $color-background: #201F1F
+$color-background-2: #cacbff
+$color-background-3: #5D5FEF
 // Transition:
 $transition-03: 0.3s linear all
 $transition-02: 0.3s linear all
+// Forms:
+$input-focus-color: #1F51FF
+$input-validation-ok: #00CD6B
+$input-validation-error: #FF3131
 
 // === Globals ===
 *
@@ -37,7 +43,7 @@ a
     text-decoration: none !important
     color: inherit !important
     &:visited
-        color: inherit !important
+        color: none !important
 
 ul, li
     list-style: none !important
@@ -51,12 +57,25 @@ button
 
 // Sections
 .section
-    width: 100%
-    height: 100%
+    padding-bottom: 4rem
+    height: 100% !important
     .section-center
-        width: 90% !important
-        height: 100% !important
-        margin: 0 auto !important
+        width: 90%
+        margin: 0 auto
+        display: block !important
+        .section-title
+            text-align: center
+            margin-bottom: 3rem !important
+            span
+                font-weight: 400
+                font-size: 1rem
+                letter-spacing: 2px
+                color: $color-main-light
+            h2
+                font-weight: 300
+                margin-top: 0.3rem
+                font-size: 2.2rem
+                letter-spacing: 1.2px
 
 // Buttons
 .btn-solid
@@ -65,7 +84,7 @@ button
     font-family: $font-main
     border: 2px solid $color-main-dark
     background: $color-main-dark
-    color: $color-neutral-white
+    color: $color-neutral-white !important
     padding: 0.7rem 1.3rem
 
 .btn-ghost
@@ -98,3 +117,79 @@ button
         color: $color-neutral-white
         #btnArrow
             color: $color-neutral-white
+
+.btn-light
+    font-size: 1.2rem
+    font-weight: 400
+    letter-spacing: 1.2px
+    font-family: $font-main
+    background: $color-background-3
+    border: 2px solid $color-background-3
+    color: $color-neutral-white
+    padding: 0.7rem 1.3rem
+    transition: $transition-02
+    #btnArrow
+        margin-left: 1.2rem
+        font-size: 1.7rem
+        color: $color-main-dark
+        transition: $transition-02
+    &:hover
+        border: 2px solid $color-main-dark
+        background: $color-main-dark
+        color: $color-neutral-white
+        #btnArrow
+            color: $color-neutral-white
+
+// Forms
+.single-input
+    display: flex
+    flex-direction: column
+    margin-bottom: 1.3rem
+    label
+        color: $color-neutral-black
+        font-weight: 700
+        font-size: 0.9rem
+        padding-left: 0.25rem
+    input
+        border: 1px solid lightgray
+        border-radius: 0.5rem
+        height: 2.7rem
+        padding-left: 0.7rem
+        font-size: 1rem
+        &:focus
+            border: 1px solid $input-focus-color !important
+    input::placeholder
+        font-weight: 400
+        font-size: 0.9rem
+        opacity: 0.75
+
+.single-textarea
+    display: flex
+    flex-direction: column
+    label
+        color: $color-neutral-black
+        font-weight: 700
+        font-size: 0.9rem
+        padding-left: 0.25rem
+    textarea
+        resize: none
+        border: 1px solid lightgray
+        border-radius: 0.5rem
+        padding-left: 0.7rem
+        padding-top: 0.5rem
+    textarea::placeholder
+        font-weight: 400
+        font-size: 0.9rem
+        opacity: 0.75
+
+// === Queries ===
+@media (min-width: 980px)
+    .section-title
+        span
+            font-size: 1.5rem !important
+
+@media (min-width: 1250px)
+    .section-title
+        margin-bottom: 4rem !important
+        span
+            font-size: 1.5rem !important

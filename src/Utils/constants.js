@@ -1,5 +1,11 @@
+// API:
+export const apiBaseUrl = "https://s1-02-t.herokuapp.com";
+
+// Images
 export const bannerImageUrl =
 	"https://firebasestorage.googleapis.com/v0/b/s1-02-t.appspot.com/o/79082.jpg?alt=media&token=d9008690-6e5d-4b5d-bb68-1f8cb342a62f";
+export const bannerCTA =
+	"https://storage.googleapis.com/s1-02-t.appspot.com/aca9b7ad-af5b-487c-804a-fd8a6fa9cc49jpeg";
 
 // Services
 export const myServices = [

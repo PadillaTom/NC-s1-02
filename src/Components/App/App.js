@@ -10,14 +10,14 @@ import Footer from "../Footer/Footer";
 function App() {
 	return (
 		<div>
-			<Navbar />
 			<BrowserRouter>
+				<Navbar />
 				<Routes>
 					<Route path="/" exact element={<Homepage></Homepage>}></Route>
 					<Route path="*" element={<Error404></Error404>}></Route>
 				</Routes>
+				<Footer></Footer>
 			</BrowserRouter>
-			<Footer></Footer>
 		</div>
 	);
 }

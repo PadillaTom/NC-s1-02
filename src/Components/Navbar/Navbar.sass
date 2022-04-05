@@ -20,8 +20,11 @@
     font-size: 1.3rem
     letter-spacing: 1.7px
 
+.nav-ham
+    font-size: 1.5rem
+
 .nav-right
-    display: flex
+    display: none
     align-items: center
     justify-content: space-around
     .nav-link
@@ -33,3 +36,10 @@
         transition: $transition-02
         &:hover
             color: $color-main-light !important
+
+// Queries
+@media (min-width: 768px)
+    .nav-ham
+        display: none
+    .nav-right
+        display: flex
