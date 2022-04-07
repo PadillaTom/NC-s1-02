@@ -2,10 +2,11 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import "./App.sass";
-import Navbar from "../Navbar/Navbar";
 
-import { Error404, Homepage } from "../../Pages";
+import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
+import Homepage from "../../Pages/LandingPage/Homepage/Homepage";
+import { Error404 } from "../../Pages";
 
 function App() {
 	return (

@@ -1,0 +1,57 @@
+@import "../../../CSS/index.sass"
+
+.services-container
+    display: grid
+    grid-template-row: repeat( 3, 1fr)
+    place-items: center
+    row-gap: 2rem
+    width: 85%
+    margin: 0 auto
+    // Service Card    
+    .service-container
+        width: 100%
+        height: 100%
+        padding-bottom: 2rem
+        background: $color-neutral-white
+        border: 1px solid lightgray
+        border-radius: 0.6rem
+        .img-container
+            width: 100% !important
+            overflow: hidden
+            border-top-left-radius: 0.6rem
+            border-top-right-radius: 0.6rem
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        .service-desc
+            text-align: center
+            width: 90%
+            margin: 0 auto
+            h2
+                font-size: 1.3rem
+                font-weight: 300
+                padding: 0.3rem 0rem
+                color: $color-main-normal
+                letter-spacing: 0.9px
+            p
+                font-weight: 300
+                font-size: 0.9rem
+                letter-spacing: 0.5px
+            .btn-ghost
+                font-size: 1rem !important
+                padding: 0.5rem 2.2rem !important
+
+@media (min-width: 680px)
+    .services-container
+        width: 100%
+        grid-template-columns: repeat(3,1fr)
+        column-gap: 2rem
+@media (min-width: 980px)
+    .services-container
+        column-gap: 4rem !important
+    .service-desc
+        h2
+            font-size: 1.7rem !important
+        p
+            font-size: 1rem !important
