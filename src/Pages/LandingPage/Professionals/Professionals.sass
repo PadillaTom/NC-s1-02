@@ -1,0 +1,65 @@
+@import "../../../CSS/index.sass"
+.professionals-container
+    display: flex
+    flex-direction: column
+    align-items: center    
+    .professional-card
+        width: 92%
+        max-width: 22rem
+        margin: 0 auto
+        background: $color-neutral-white
+        margin-bottom: 3rem !important    
+        padding-top: 1.8rem
+        padding-bottom: 0.7rem
+        border-radius: 1rem
+        box-shadow: 0px 6px 9px #72727263
+        .card-top
+            text-align: center 
+            img
+                width: 9.2rem
+                height: 9.2rem
+                object-fit: cover
+                border-radius: 50%
+            h2
+                padding-top: 1rem
+                padding-bottom: 0.5rem
+                color: $color-neutral-black
+                white-space: nowrap
+                font-size: 1.1rem
+                letter-spacing: 0.7px
+                text-transform: uppercase
+            span
+                text-transform: capitalize
+                color: $color-main-light
+                font-size: 1rem
+        hr
+            width: 80%
+            margin: 0.8rem auto
+        .card-bottom
+            width: 87%
+            margin: 0 auto
+            text-align: center
+            h2
+                text-transform: uppercase
+                color: $color-main-normal
+                font-size: 1.1rem
+                font-weight: 700
+                letter-spacing: 1px
+                padding-bottom: 0.4rem
+            p
+                font-weight: 300
+                font-size: 1rem
+                letter-spacing: 0.5px
+
+
+@media (min-width: 700px)
+    .professionals-container
+        display: grid !important
+        grid-template-columns: repeat(2,1fr) 
+        column-gap: 2rem
+        .professional-card
+            width: 100%
+@media (min-width: 850px)
+    .professionals-container    
+        grid-template-columns: repeat(3,1fr)
+        column-gap: 1.3rem
