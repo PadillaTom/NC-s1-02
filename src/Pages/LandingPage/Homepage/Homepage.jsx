@@ -5,7 +5,7 @@ import Banner from "../Banner/Banner";
 import Professionals from "../Professionals/Professionals";
 import Professions from "../Professions/Professions";
 import CallToAction from "../CallToAction/CallToAction";
-import Services from "../Services/Services";
+import { Services, Services2 } from "../Services";
 import Contacto from "../Contacto/Contacto";
 import Estadisticas from "../Estadisticas/Estadisticas";
 
@@ -14,17 +14,18 @@ import { ProfessionalsProvider } from "../../../Context/professionals_context";
 
 const Homepage = () => {
 	return (
-		<Fragment>
+		<Fragment> 
 			<Banner></Banner>
 			<ProfessionalsProvider>
 				<Professionals></Professionals>
 			</ProfessionalsProvider>
+			<Services2></Services2>
 			<ProfessionsProvider>
 				<Professions></Professions>
 			</ProfessionsProvider>
-			<CallToAction></CallToAction>
-			<Services></Services>
+			{/* <Services></Services> */}
 			<Estadisticas></Estadisticas>
+			<CallToAction></CallToAction>
 			<Contacto></Contacto>
 		</Fragment>
 	);

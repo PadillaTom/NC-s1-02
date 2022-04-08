@@ -1,0 +1,39 @@
+@import "../../../CSS/index.sass"
+
+.services2-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    width: 100%
+    margin: 0 auto
+    text-align: center
+    .service2-card
+        margin-bottom: 3rem
+        .img-container
+            img
+                width: 35% !important
+    .card-info
+        padding-top: 1rem
+        h2
+            font-size: 1.5rem
+            letter-spacing: 1px
+            font-weight: 500
+            padding-bottom: 0.7rem
+        p
+            width: 95%
+            margin: 0 auto
+            font-weight: 400
+            letter-spacing: 0.7px
+            opacity: 0.8
+
+@media  (min-width: 768px)
+    .services2-container
+        display: grid !important
+        grid-template-columns: repeat(2, 1fr)
+        column-gap: 2rem
+        padding-top: 3rem
+@media  (min-width: 1000px)
+    .services2-container
+        grid-template-columns: repeat(3, 1fr)
+        column-gap: 3rem
