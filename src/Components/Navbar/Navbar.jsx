@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 
 import "./Navbar.sass";
+import Logox1 from "../../Assets/Logox1.png";
 import Sidebar from "../Sidebar/Sidebar";
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
 			<nav className="navbar-container">
 				<div className="nav-center">
 					<Link to="/" className="nav-left">
-						Logo
+						<img src={Logox1} alt="TeleMed" />
 					</Link>
 					<div
 						className="nav-ham"

@@ -1,14 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaTimes } from "react-icons/fa";
+
 import "./Sidebar.sass";
+import Logox1 from "../../Assets/Logox1.png";
 
 const Sidebar = ({ closeFunction }) => {
 	return (
 		<article className="sidebar-container">
 			<div className="sidebar-center">
 				<div className="side-top">
-					<h2>Logo</h2>
+					<Link to="/" className="nav-left">
+						<img src={Logox1} alt="TeleMed" />
+					</Link>
 					<FaTimes
 						onClick={() => {
 							closeFunction();

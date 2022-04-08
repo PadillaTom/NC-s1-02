@@ -41,7 +41,7 @@ const Footer = () => {
 				<div className="footer-bot">
 					<form className="newsletter">
 						<h2>Subscribe to our newsletter</h2>
-						<div className="single-input">
+						<div className="single-input news-input">
 							<input type="email" placeholder="Email Address" />
 							<button type="submit">
 								<BsArrowRightSquareFill id="submitArrow"></BsArrowRightSquareFill>
