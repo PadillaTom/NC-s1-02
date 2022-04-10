@@ -9,12 +9,13 @@ import Homepage from "../../Pages/LandingPage/Homepage/Homepage";
 import { Error404 } from "../../Pages";
 
 function App() {
+	const scrollIDs = ["esp", "prof", "cont"];
 	return (
 		<div>
 			<BrowserRouter>
-				<Navbar />
+				<Navbar scrollList={scrollIDs} />
 				<Routes>
-					<Route path="/" exact element={<Homepage></Homepage>}></Route>
+					<Route path="/" exact element={<Homepage> </Homepage>}></Route>
 					<Route path="*" element={<Error404></Error404>}></Route>
 				</Routes>
 				<Footer></Footer>

@@ -21,7 +21,7 @@ const Professions = () => {
 		return <Error></Error>;
 	}
 	return (
-		<section className="section professions-sect">
+		<section className="section professions-sect" id="prof">
 			<div className="section-center">
 				<div className="section-title">
 					<span>Servicios</span>

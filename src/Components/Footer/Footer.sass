@@ -80,11 +80,17 @@ footer
                         font-size: 2rem
                         color: $color-main-light
             .social-icons
-                width: 8rem
+                width: 9rem
                 display: flex
                 flex-direction: row
                 align-items: center
                 justify-content: space-between
+            .social-icons > *
+                cursor: pointer
+                transition: $transition-02
+                font-size: 1.3rem
+                &:hover
+                    color: $color-main-light
 .copy-mobile
     text-align: center
     height: 3rem

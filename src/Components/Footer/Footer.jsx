@@ -4,7 +4,7 @@ import { BsArrowUpCircleFill, BsArrowRightSquareFill } from "react-icons/bs";
 
 import "./Footer.sass";
 
-import ScrollToTopOnClick from "../../Utils/ScrollToTopOnClick";
+import { ScrollToTopOnClick, ScrollToView } from "../../Utils";
 
 const Footer = () => {
 	return (
@@ -13,8 +13,8 @@ const Footer = () => {
 				{/* Footer TOP */}
 				<div className="footer-top">
 					<h2 className="copy-desktop">
-						Copyright &copy; {new Date().getFullYear()}. Piscored. All rights
-						reserved.
+						Copyright &copy; {new Date().getFullYear()}. TeleMed. Todos los
+						derechos reservados.
 					</h2>
 					<div className="map-list">
 						<h2 className="list-title">Services</h2>
@@ -40,9 +40,9 @@ const Footer = () => {
 				{/* Footer BOT */}
 				<div className="footer-bot">
 					<form className="newsletter">
-						<h2>Subscribe to our newsletter</h2>
+						<h2>Suscribirse a nuestro Newsletter</h2>
 						<div className="single-input news-input">
-							<input type="email" placeholder="Email Address" />
+							<input type="email" placeholder="E-mail" />
 							<button type="submit">
 								<BsArrowRightSquareFill id="submitArrow"></BsArrowRightSquareFill>
 							</button>
@@ -57,8 +57,8 @@ const Footer = () => {
 			</div>
 			<div className="copy-mobile">
 				<h2>
-					Copyright &copy; {new Date().getFullYear()}. Piscored. All rights
-					reserved.
+					Copyright &copy; {new Date().getFullYear()}. TeleMed. Todos los
+					derechos reservados.
 				</h2>
 			</div>
 		</footer>

@@ -5,7 +5,7 @@ import "./Contacto.sass";
 
 const Contacto = () => {
 	return (
-		<section className="contact-sect">
+		<section className="contact-sect" id="cont">
 			<div className="section-center">
 				<div className="contact-container">
 					<div className="contact-top">
@@ -47,7 +47,7 @@ const Contacto = () => {
 									name="phone"
 									id="phone"
 									type="text"
-									placeholder="+54 11 234 56 78"
+									placeholder="+54 15 5 012 3456"
 								/>
 							</div>
 							<div className="single-input">
@@ -56,7 +56,7 @@ const Contacto = () => {
 									name="subject"
 									id="subject"
 									type="text"
-									placeholder="Tomas"
+									placeholder="Registro, Soporte, etc..."
 								/>
 							</div>
 							<div className="single-textarea">
