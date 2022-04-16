@@ -24,10 +24,8 @@ const Login = () => {
 		e.preventDefault();
 		authService.login(email, password).then(
 			() => {
-				if (authService.getCurrentUser()) {
-					navigate("/dashboard");
-					window.location.reload();
-				}
+				navigate("/dashboard");
+				window.location.reload();
 			},
 			(error) => {
 				const myErr = error.response.data;
