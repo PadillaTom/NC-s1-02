@@ -1,8 +1,9 @@
 import React from "react";
 
-const Loading = () => {
+const Loading = (props) => {
+	const { isPage } = props;
 	return (
-		<section className="section">
+		<section className={`section ${isPage && "page-sect"}`}>
 			<div className="section-center">
 				<div className="section-title">
 					<span style={{ fontSize: "1.5rem", color: "lightcoral" }}>
