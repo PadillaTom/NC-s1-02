@@ -39,7 +39,11 @@ function App() {
 						<Route path="/" exact element={<Homepage> </Homepage>}></Route>
 					) : (
 						<React.Fragment>
-							<Route path="/" exact element={<Dashboard> </Dashboard>}></Route>
+							<Route
+								path="/dashboard"
+								exact
+								element={<Dashboard> </Dashboard>}
+							></Route>
 							{/* Patient */}
 							<Route
 								path="/pat/mis-doctores"

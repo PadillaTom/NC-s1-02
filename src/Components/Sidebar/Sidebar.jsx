@@ -145,7 +145,7 @@ const Sidebar = ({
 										closeFunction();
 									}}
 								>
-									<Link to="/">Mi Perfil</Link>
+									<Link to="/dashboard">Mi Perfil</Link>
 								</li>
 								<li
 									className="side-link"
@@ -195,7 +195,7 @@ const Sidebar = ({
 										closeFunction();
 									}}
 								>
-									<Link to="/">Mi Perfil</Link>
+									<Link to="/dashboard">Mi Perfil</Link>
 								</li>
 								<li
 									className="side-link"
@@ -245,7 +245,7 @@ const Sidebar = ({
 										closeFunction();
 									}}
 								>
-									<Link to="/">Mi Perfil</Link>
+									<Link to="/dashboard">Mi Perfil</Link>
 								</li>
 								<li
 									className="side-link"

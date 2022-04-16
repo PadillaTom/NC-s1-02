@@ -74,15 +74,27 @@ const Navbar = () => {
 		<React.Fragment>
 			<nav className="navbar-container">
 				<div className="nav-center">
-					<Link
-						to="/"
-						className="nav-left"
-						onClick={() => {
-							ScrollToTopOnClick();
-						}}
-					>
-						<img src={Logox1} alt="TeleMed" />
-					</Link>
+					{currentUser ? (
+						<Link
+							to="/dashboard"
+							className="nav-left"
+							onClick={() => {
+								ScrollToTopOnClick();
+							}}
+						>
+							<img src={Logox1} alt="TeleMed" />
+						</Link>
+					) : (
+						<Link
+							to="/"
+							className="nav-left"
+							onClick={() => {
+								ScrollToTopOnClick();
+							}}
+						>
+							<img src={Logox1} alt="TeleMed" />
+						</Link>
+					)}
 					<div
 						className="nav-ham"
 						onClick={() => {
@@ -148,7 +160,7 @@ const Navbar = () => {
 					{showPatientBoard && (
 						<ul className="nav-right">
 							<li onClick={() => {}} className="nav-link">
-								<Link to="/">Mi Perfil</Link>
+								<Link to="/dashboard">Mi Perfil</Link>
 							</li>
 							<li className="nav-link">
 								<Link
@@ -182,7 +194,7 @@ const Navbar = () => {
 					{showProfessionalBoard && (
 						<ul className="nav-right">
 							<li onClick={() => {}} className="nav-link">
-								<Link to="/">Mi Perfil</Link>
+								<Link to="/dashboard">Mi Perfil</Link>
 							</li>
 							<li className="nav-link">
 								<Link
@@ -224,7 +236,7 @@ const Navbar = () => {
 					{showAdminBoard && (
 						<ul className="nav-right">
 							<li onClick={() => {}} className="nav-link">
-								<Link to="/">Mi Perfil</Link>
+								<Link to="/dashboard">Mi Perfil</Link>
 							</li>
 							<li onClick={() => {}} className="nav-link">
 								<Link
