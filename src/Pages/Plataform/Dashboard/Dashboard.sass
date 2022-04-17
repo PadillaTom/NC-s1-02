@@ -1,1 +1,46 @@
 @import "../../../CSS/index.sass"
+
+.subtitle
+    font-weight: 500
+    letter-spacing: 1px
+
+// Main
+.main-container
+    width: 100%
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    hr
+        height: 1px !important
+        width: 80%
+    .btn-pastel
+        align-self: center !important
+    .data-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        img
+            width: 9rem
+            height: 9rem
+            object-fit: cover
+            border-radius: 50%
+            border: 4px solid $color-main-normal
+        .data
+            margin-top: 1rem
+            h2
+                font-weight: 400
+                letter-spacing: 1.2px
+                font-size: 1.7rem
+            h3
+                margin-top: 0.25rem !important
+                text-transform: uppercase
+                font-size: 1.1rem
+                font-weight: 600
+                letter-spacing: 1px
+                color: $color-neutral-600
+
+.single-block
